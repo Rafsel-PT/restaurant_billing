@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Billing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Restaurant Menu</h1>
+
+        <div class="menu">
+            <div class="menu-item">
+                <span>Burger</span> <span>$99.00</span>
+                <button onclick="addToBill('Burger', 99.00)">Add</button>
+            </div>
+            <div class="menu-item">
+                <span>Pizza</span> <span>$149.00</span>
+                <button onclick="addToBill('Pizza', 149.00)">Add</button>
+            </div>
+            <div class="menu-item">
+                <span>Pasta</span> <span>$110.00</span>
+                <button onclick="addToBill('Pasta', 110.00)">Add</button>
+            </div>
+            <div class="menu-item">
+                <span>Coffee</span> <span>$35.00</span>
+                <button onclick="addToBill('Coffee', 35.00)">Add</button>
+            </div>
+            <div class="menu-item">
+                <span>Chicken Biriyani</span> <span>$150.00</span>
+                <button onclick="addToBill('Chicken Biriyani', 150.00)">Add</button>
+            </div>
+            <div class="menu-item">
+                <span>Fries</span> <span>$149.00</span>
+                <button onclick="addToBill('Fries', 149.00)">Add</button>
+            </div>
+        </div>
+
+        <h2>Bill</h2>
+        <ul id="bill-list"></ul>
+        <h3>Total: $<span id="total">0.00</span></h3>
+        <button onclick="print()">print Bill</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
